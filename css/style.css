@@ -1,0 +1,45 @@
+.personagens{
+    width: 300px;
+    height: 500px;
+    background-image: url(../ing/image.png);
+    background-size: 100% 100%;
+    animation: personagens 1s linear infinite;
+    transition: all 5s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 100dvh;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.container:hover .personagens{
+    animation: personagens 1s linear infinite;
+}
+
+@keyframes personagens{
+    0%{
+        background-image: url(../ing/image.png);
+    }
+    20%{
+        background-image: url(../ing/Imagem2.png);
+    }
+    40%{
+        background-image: url(../ing/Imagem3.png);
+    }
+    60%{
+        background-image: url(../ing/Imagem4.png);
+    }
+    80%{
+        background-image: url(../ing/Imagem5.png);
+    }
+    100%{
+        background-image: url(../ing/Imagem6.png);
+    }
+}
